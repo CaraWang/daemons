@@ -129,9 +129,9 @@ module Daemonize
 
     # Make sure all input/output streams are closed
     # Part II: close all file decriptors (except for $stdin/$stdout/$stderr)
-    3.upto(8192) do |i|
-      IO.for_fd(i).close rescue nil
-    end
+    #3.upto(8192) do |i|
+    #  IO.for_fd(i).close rescue nil
+    #end
   end
   module_function :close_io
 
